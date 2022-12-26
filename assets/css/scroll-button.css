@@ -1,0 +1,54 @@
+:root {
+    --dark-color: #002D5D;
+    --light-color: #00A0AF;
+}
+
+svg {
+    cursor: pointer;
+}
+
+#darkGroup {
+    fill: var(--dark-color);
+}
+
+#lightGroup {
+    fill: var(--light-color);
+}
+
+#dark1,
+#light1,
+#dark2 {
+    transition: all 1s ease;
+}
+
+#light1 {
+    transform: translateY(-50%);
+}
+
+#dark1 {
+    transform: translateY(90%);
+}
+
+#dark2 {
+    transform: translateY(-55%);
+}
+
+svg:hover #light1 {
+    transform: translateY(-80%);
+}
+
+svg:hover #dark1 {
+    transform: translateY(-55%);
+}
+
+svg:hover #dark2 {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
